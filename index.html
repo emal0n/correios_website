@@ -6,26 +6,28 @@
     <title>Correios</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<div class="slogan" >
-    <img src="raw/google-maps.png" width="20">
-        <span>site<b>correios</b></span> 
-</div>
-
-<div class="cep">
-    <h1 id="cep"></h1>
-</div>
-
-<div class="endereco">
-<h4 id="endereco"></h4>
+<header class="slogan" ></br> <img src="raw/google-maps.png" width="20"><span>site<b>correios</b></span>
+</header>
 </div>
 
 <body>
+    <div class="cep">
+        <h1 id="cep"></h1>
+        <h6 id="endereco"></h6>
+    </div>
+    <center>
    <div class="buscacep">
     <br>
     <H3>Busque outro CEP</H3>
+    <br>
     <input type="text" id="cepInput" placeholder="   Digite o CEP...">
     <button onclick="buscarEndereco()">BUSCAR CEP</button>
-</div> 
+</div>
+<br>
+
+<div class="idk"
+<h6> by emal0n</h6>
+</div>
 
     <script>
         function buscarEndereco() {
@@ -47,5 +49,6 @@
             .catch(error => console.error('Erro:', error));
         }
     </script>
+</center>
 </body>
 </html>

@@ -1,26 +1,31 @@
 .slogan{
     background-color: white;
     width:auto;
-    height: 60px;
+    height: 70px;
     text-align: left;
-    margin
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .buscacep{
     background-color: #ffff00;
     size: 100%;
-    width:1000px;
+    width:auto;
     padding: auto;
     height: 200px;
     border: none;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-top: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align: center;
 }
 
 .cep{
-    text-align: left;
+    background-color:#e7e7e7;
+    size: 100%;
+    width:auto;
+    padding: auto;
+    height: 130px;
+    border: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 70px;
+    align: center;
 }
 
 .endereco{
@@ -30,8 +35,9 @@
 }
 
 body{
-    background-color: rgb(228, 228, 228);
-    text-align: center;
+    background-color:#e7e7e7;
+    margin: 0;
+
 }
 
 input{
@@ -52,6 +58,8 @@ button{
     border: none;
 }
 
-span{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.idk{
+    color:#746f6f;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: small;
 }
