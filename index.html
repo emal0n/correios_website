@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulta de CEP</title>
+    <title>Correios</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<header>
+        <span>site<b>correios</b></span> 
+</header>
+<h3 id="endereco"></h3>
 <body>
-    <h1>Consulta de CEP</h1>
-    <label for="cepInput">Digite o CEP:</label>
-    <input type="text" id="cepInput">
-    <button onclick="buscarEndereco()">Buscar</button>
-    <div id="endereco"></div>
-
+<br>
+   <div>
+    <br>
+    <H3>Busque outro CEP</H3>
+    <input type="text" id="cepInput" placeholder="   Digite o CEP...">
+    <button onclick="buscarEndereco()">BUSCAR CEP</button>
+</div> 
     <script>
         function buscarEndereco() {
             var cep = document.getElementById('cepInput').value;
