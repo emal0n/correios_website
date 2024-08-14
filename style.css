@@ -1,0 +1,47 @@
+header{
+    background-color: white;
+    text-align: left;
+    size: 100%;
+    width:auto;
+    padding: auto;
+    height: 40px;
+    flex-direction: column;
+    border: none;
+}
+
+div{
+    background-color: yellow;
+    size: 100%;
+    width:1000px;
+    padding: auto;
+    height: 200px;
+    flex-direction: column;
+    border: none;
+}
+
+body{
+    background-color: rgb(228, 228, 228);
+    text-align: center;
+}
+
+input{
+    background-color: white;
+    border: none;
+    width: 400px;
+    padding: 0;
+    height: 39px;
+    flex-direction: column;
+    font-size: small;
+}
+
+button{
+    background-color: rgb(100, 182, 237);
+    color: white;
+    font-weight: 100;
+    font-size: x-small;
+    width: 100px;
+    padding: 0;
+    height: 39px;
+    flex-direction: column;
+    border: none;
+}
