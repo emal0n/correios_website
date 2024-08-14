@@ -6,18 +6,27 @@
     <title>Correios</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<header>
+<div class="slogan" >
+    <img src="raw/google-maps.png" width="20">
         <span>site<b>correios</b></span> 
-</header>
-<h3 id="endereco"></h3>
+</div>
+
+<div class="cep">
+    <h1 id="cep"></h1>
+</div>
+
+<div class="endereco">
+<h4 id="endereco"></h4>
+</div>
+
 <body>
-<br>
-   <div>
+   <div class="buscacep">
     <br>
     <H3>Busque outro CEP</H3>
     <input type="text" id="cepInput" placeholder="   Digite o CEP...">
     <button onclick="buscarEndereco()">BUSCAR CEP</button>
 </div> 
+
     <script>
         function buscarEndereco() {
             var cep = document.getElementById('cepInput').value;
@@ -27,9 +36,11 @@
             .then(response => response.json())
             .then(data => {
                 if(data.erro) {
-                    document.getElementById('endereco').innerText = "CEP não encontrado.";
+                    document.getElementById('cep').innerText = "CEP não encontrado.";
                 } else {
-                    var endereco = `CEP: ${data.cep}, ${data.logradouro}, ${data.bairro}, ${data.localidade}, ${data.uf}`;
+                    var cep = `${data.cep}`;
+                    document.getElementById('cep').innerText = cep;
+                    var endereco = `${data.logradouro}, ${data.bairro}, ${data.localidade}, ${data.uf}`;
                     document.getElementById('endereco').innerText = endereco;
                 }
             })
