@@ -23,7 +23,7 @@
     size: 100%;
     width:auto;
     padding: auto;
-    height: 130px;
+    height: 170px;
     border: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     align: center;
@@ -66,7 +66,7 @@ button{
 
 h1{
     float: left;
-    margin-top: 40px;
+    margin-top: 60px;
     font-size:xx-large;
     margin-left: 5px;
 }
@@ -75,8 +75,9 @@ h6{
     color:#746f6f;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     float: left;
+    margin-left: 3px;
     font-size: xx-small;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 img{
