@@ -3,33 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Correios</title>
+    <title>BuscaCEP</title>
+    <link rel="shortcut icon" href="raw/google-maps.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" href="raw/GitHub-logo.png">
 </head>
-<header class="slogan" ></br> <img src="raw/google-maps.png" width="20"><span>site<b>correios</b></span>
+<header class="slogan"><br> <img src="raw/google-maps.png" width="20">
+    <span>site<b>correios</b></span>
 </header>
-</div>
-
+    </div>
 <body>
     <div class="cep">
         <h1 id="cep"></h1>
         <h6 id="endereco"></h6>
     </div>
-    <center>
-   <div class="buscacep">
-    <br>
-    <H3>Busque outro CEP</H3>
-    <br>
+<center>
+    <div class="buscacep"><br>
+        <H3>Consulte Aqui</H3><br>
     <input type="text" id="cepInput" placeholder="   Digite o CEP...">
     <button onclick="buscarEndereco()">BUSCAR CEP</button>
-</div>
-<br>
+    </div><br>
 
-<div class="idk"
-<h6> by emal0n</h6>
-</div>
-
-    <script>
+    <div class="idk"
+        <h6> by emal0n, and</h6><br>
+        <span>hosted<b> on</b></span>
+        <img src="raw/GitHub-logo.png" width="20">
+    </div>
+<script>
         function buscarEndereco() {
             var cep = document.getElementById('cepInput').value;
             var url = `https://viacep.com.br/ws/${cep}/json/`;
@@ -42,13 +42,13 @@
                 } else {
                     var cep = `${data.cep}`;
                     document.getElementById('cep').innerText = cep;
-                    var endereco = `${data.logradouro}, ${data.bairro}, ${data.localidade}, ${data.uf}`;
+                    var endereco = `${data.logradouro}, ${data.bairro}, ${data.localidade} - ${data.uf}`;
                     document.getElementById('endereco').innerText = endereco;
                 }
             })
             .catch(error => console.error('Erro:', error));
         }
-    </script>
+</script>
 </center>
 </body>
 </html>
